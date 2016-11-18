@@ -1,0 +1,10 @@
+--- src/block.c
++++ src/block.c
+@@ -336,6 +336,7 @@
+     case DTYPE_VIRTIO_SCSI:
+     case DTYPE_LSI_SCSI:
+     case DTYPE_ESP_SCSI:
++    case DTYPE_MPT_SCSI:
+         return process_scsi_op(op);
+     default:
+         op->count = 0;
